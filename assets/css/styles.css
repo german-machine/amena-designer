@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url(assets/images/bg-grad.png);
+}
+
+@media screen and (min-width: 0px){
+    .body{
+        width:100%;
+        background-image: url(../images/bg-grad.png);
+    }
+
+    .body .container{
+        width:90%;
+        margin:auto;
+    }
+
+    .body .container nav{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:20px 0px;
+    }
+
+    .body .container nav .logo{
+        font-size:18px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        line-height:34.5px;
+        text-align:center;
+        text-transform: capitalize;
+        color:#310E0E;
+    }
+
+    .body .container nav ul{
+        display:flex;
+    }
+    
+    .body .container nav ul li{
+        padding:0px 6px;
+        list-style: none;
+    }
+    
+    .body .container nav ul li a{
+        font-size:14px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        line-height:34.5px;
+        text-align:center;
+        color:#310E0E;
+        text-decoration:none;
+    }
+
+    .body .container nav .login{
+        display:none;
+        border: 2px solid #828282;
+        border-radius:60px;
+        padding:0px 22px;
+        text-transform: capitalize;
+        font-size:16px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        line-height:34.5px;
+        text-align:center;
+        color:#310E0E;
+        cursor: pointer;
+    }
+
+    .body .container .hero{
+        width:100%;
+        margin-top:10px;
+    }
+
+    .body .container .hero .text{
+        width: 100%;
+        max-width:100%;
+        margin:auto;
+        text-align:center;
+        font-weight: 800;
+        font-size:25px;
+        line-height: 45px;
+        font-family: 'Poppins', sans-serif;
+        color:#00203F;
+        margin-bottom: 30px;
+    }
+
+    .body .container .hero .cards{
+        width:100%;
+        margin:auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap:5%;
+    }
+
+    .body .container .hero .cards .card{
+        width:100%;
+        margin-bottom: 5%;
+        border-radius: 10px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        padding:15px 0px;
+    }
+
+    .body .container .hero .cards .card.med{
+        background: #00E0FF3D;
+    }
+    
+    .body .container .hero .cards .card.med h3{
+        color: #00588A;
+        font-size:28px;
+    }
+    
+    .body .container .hero .cards .card.med p{
+        color: #233E60;
+        font-size:13px;
+        line-height: 19.5px;
+        text-align:center;
+        max-width: 80%;
+        margin-bottom: 10px;
+    }
+    
+    .body .container .hero .cards .card.med a{
+        color: white;
+        background-color: #00588A;
+        border-radius:41px;
+        padding:4px 20px;
+        text-align: center;
+        font-size:13px;
+        text-decoration:none;
+        box-shadow: 3px 8px 16.8px #233E6054;
+    }
+    
+    
+    .body .container .hero .cards .card.dine{
+        background: #FFC7005E;
+    }
+    
+    .body .container .hero .cards .card.dine h3{
+        color: #00000099;
+        font-size:28px;
+    }
+    
+    .body .container .hero .cards .card.dine p{
+        color: #742D06;
+        font-size:13px;
+        line-height: 19.5px;
+        text-align:center;
+        max-width: 90%;
+        margin-bottom: 10px;
+    }
+    
+    .body .container .hero .cards .card.dine a{
+        color: white;
+        background-color:#665E40;
+        border-radius:41px;
+        padding:4px 20px;
+        text-align: center;
+        font-size:13px;
+        text-decoration:none;
+        box-shadow: 3px 8px 16.8px #233E6054;
+    }
+    
+    
+    .body .container .hero .cards .card.car{
+        background: #FF7A0078;
+    }
+    
+    .body .container .hero .cards .card.car h3{
+        color: #00000099;
+        font-size:28px;
+    }
+    
+    .body .container .hero .cards .card.car p{
+        color: #742D06;
+        font-size:13px;
+        line-height: 19.5px;
+        text-align:center;
+        max-width: 90%;
+        margin-bottom: 10px;
+    }
+    
+    .body .container .hero .cards .card.car a{
+        color: white;
+        background-color: #665E40;
+        border-radius:41px;
+        padding:4px 20px;
+        text-align: center;
+        font-size:13px;
+        text-decoration:none;
+        box-shadow: 3px 8px 16.8px #233E6054;
+    }
+    
+    .body .container .hero .cards .card.elect{
+        background: #42FF005E;
+    }
+    
+    .body .container .hero .cards .card.elect img{
+        width: 191px;
+        height: 190px;
+    }
+    
+    .body .container .hero .cards .card.elect h3{
+        color: #00000099;
+        font-size:28px;
+    }
+    
+    .body .container .hero .cards .card.elect p{
+        color: #742D06;
+        font-size:13px;
+        line-height: 19.5px;
+        text-align:center;
+        max-width: 95%;
+        margin-bottom: 10px;
+    }
+    
+    .body .container .hero .cards .card.elect a{
+        color: white;
+        background-color: #665E40;
+        border-radius:41px;
+        padding:4px 20px;
+        text-align: center;
+        font-size:13px;
+        text-decoration:none;
+        box-shadow: 3px 8px 16.8px #233E6054;
+    }
+}
+
+
+@media screen and (min-width: 375px){
+    .body .container nav ul li a{
+        font-size:18px;
+    }
+
+    .body .container .hero .text{
+        font-size:30px;
+    }
+}
+
+@media screen and (min-width: 400px){
+    .body .container nav ul li a{
+        font-size:15px;
+    }
+
+    .body .container nav .login{
+        display:inline-block;
+        padding:0px 10px;
+    }
+}
+
+@media screen and (min-width: 500px){
+    .body .container nav .login{
+        padding:0px 22px;
+    }
+
+    .body .container .hero{
+        margin-top:30px;
+    }
+
+    .body .container .hero .cards{
+        width:75%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .body .container {
+        padding:15px 0px;
+    }
+    .body .container nav .logo{
+        font-size:28px;
+    }
+
+    .body .container nav ul li a{
+        font-size:24px;
+    }
+    
+    .body .container nav .login{
+        font-size:24px;
+    }
+
+    .body .container .hero .text{
+        max-width:97%;
+        font-size:40px;
+        line-height: 65px;
+    }
+
+    .body .container .hero .cards .card.med h3,
+    .body .container .hero .cards .card.dine h3,
+    .body .container .hero .cards .card.car h3,
+    .body .container .hero .cards .card.elect h3{
+        font-size:34px;
+    }
+
+    .body .container .hero .cards .card.med p,
+    .body .container .hero .cards .card.dine p,
+    .body .container .hero .cards .card.car p,
+    .body .container .hero .cards .card.elect p{
+        font-size:20px;
+        line-height:24px;
+    }
+
+    .body .container .hero .cards .card.med a,
+    .body .container .hero .cards .card.dine a,
+    .body .container .hero .cards .card.car a,
+    .body .container .hero .cards .card.elect a{
+        font-size:20px;
+        padding:5px 20px;
+    }
+}
+
+
+@media screen and (min-width: 1024px){
+    .body .container {
+        width:85%;
+    }
+    .body .container nav .logo{
+        font-size:23px;
+        text-transform: uppercase;
+    }
+
+    .body .container nav ul li a{
+        font-size:24px;
+    }
+    
+    
+    .body .container .hero .cards{
+        width:85%;
+        margin:auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap:5%;
+    }
+
+    .body .container .hero .cards .card{
+        width:45%;
+        margin-bottom: 5%;
+        border-radius: 10px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        padding:15px 0px;
+    }
+
+    .body .container .hero .cards .card.med h3,
+    .body .container .hero .cards .card.dine h3,
+    .body .container .hero .cards .card.car h3,
+    .body .container .hero .cards .card.elect h3{
+        font-size:28px;
+    }
+
+    .body .container .hero .cards .card.med p,
+    .body .container .hero .cards .card.dine p,
+    .body .container .hero .cards .card.car p,
+    .body .container .hero .cards .card.elect p{
+        font-size:16px;
+        line-height:24px;
+    }
+
+    .body .container .hero .cards .card.med a,
+    .body .container .hero .cards .card.dine a,
+    .body .container .hero .cards .card.car a,
+    .body .container .hero .cards .card.elect a{
+        font-size:14px;
+        padding:5px 20px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .body .container .hero .text{
+        width: 100%;
+        max-width:80%;
+    }
+}
